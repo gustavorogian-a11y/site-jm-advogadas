@@ -98,13 +98,39 @@ a { color: inherit; text-decoration: none; }
   font-family: 'Inter', sans-serif;
 }
 
-.logo-plate {
-  max-width: 340px;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: var(--radius);
-  box-shadow: 0 10px 30px rgba(43,26,26,0.18);
-  display: block;
+.brand-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto 16px;
+}
+
+.brand-divider span {
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold));
+}
+
+.brand-divider span:last-child {
+  background: linear-gradient(90deg, var(--color-gold), transparent);
+}
+
+.brand-divider i {
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background: var(--color-gold);
+  display: inline-block;
+}
+
+.motto {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  margin: 6px 0 0;
 }
 
 .main-nav {
@@ -190,7 +216,8 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 
-.hero .eyebrow {
+.eyebrow {
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.78rem;
